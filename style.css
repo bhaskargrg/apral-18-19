@@ -619,12 +619,14 @@ animation-delay: 4s;
         position: relative;
         overflow: hidden;
     }
+    /* heyyeyeyeyey */
   .nav_right h3:nth-child(4){
         display: block;
         font-size: 6vw;
         padding-left: 12vw !important ;
                padding: 2.5vw 2.5vw;
-        
+        position: relative;
+        z-index: 1000;
     }
     .nav{
         padding-top: 8vw;
@@ -897,13 +899,5 @@ animation-delay: 4s;
         .swiper-slide p{
             width: 15vw;
         }
-    
-}
-.small_cover{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.827);
-    top: -100%;
     
 }

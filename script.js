@@ -87,9 +87,18 @@ function fullScreenAnimatio(){
     },6000)
 }
 function phone(){
-var small = document.querySelector(".small_cover");
+  var flag=0;
 document.querySelector("#menu").addEventListener("click",function(){
-  small.style.top=0;
+  if (flag==0) {
+     document.querySelector(".nav img").style.opacity = 0;
+     document.querySelector(".fixed_nav").style.top = 0;
+     flag=1;
+  } else {
+     document.querySelector(".nav img").style.opacity = 1;
+     document.querySelector(".fixed_nav").style.top = "-100%";
+     flag = 0;
+  }
+ 
 })
 }
 loco();
